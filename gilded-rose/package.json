@@ -1,0 +1,42 @@
+{
+  "name": "gilded-rose-kata",
+  "version": "1.0.0",
+  "description": "Gilded Rose kata in TypeScript",
+  "scripts": {
+    "precompile": "rimraf app/**/*.js test/**/*.js",
+    "compile": "tsc",
+    "pretest": "rimraf app/**/*.js test/**/*.js",
+    "test:jest": "jest",
+    "test:jest:watch": "jest --watchAll",
+    "test:mocha": "nyc mocha",
+    "lint": "eslint --fix ."
+  },
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@types/chai": "^4.2.22",
+    "@types/jest": "^27.0.2",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^16.11.7",
+    "chai": "^4.3.4",
+    "eslint": "^8.19.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^3.2.5",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "jest": "^27.3.1",
+    "mocha": "^9.1.3",
+    "nyc": "~15.1.0",
+    "prettier": "^2.7.1",
+    "rimraf": "~3.0.2",
+    "source-map-support": "^0.5.20",
+    "ts-jest": "^27.0.7",
+    "ts-node": "^10.4.0",
+    "tsconfig-paths": "^3.11.0",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.36.2"
+  }
+}
